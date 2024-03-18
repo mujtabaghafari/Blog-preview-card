@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Figtree";
+}
+body{
+    background: hsl(47, 88%, 63%);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    color: hsl(0, 0%, 7%);
+}
+.container{
+    max-width: 400px;
+    width: 100%;
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #000; /* Set border width and color */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 10px 5px 0px 4px; /* Set shadow */
+}
+.container .img{
+    width: 100%;
+}
+.container .img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.container .content{
+    margin-top: 30px;
+}
+.content .btn{
+    height: 30px;
+    width: 90px;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 6px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 800;
+}
+.content .date{
+    margin: 20px 0;
+    color: hsl(0, 0%, 50%);
+}
+.content .heading{
+    font-size: 0.7rem;
+    transition: all 0.3s;
+}
+.content .heading:hover{
+    color:  hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.content .text p{
+    font-size: 16px;
+    
+}
+.content .text{
+    margin: 20px 0;
+}
+.content .profile{
+    display: flex;
+    align-items: center;
+}
+.content .profile img{
+    height: 40px;
+}
+.content .profile h5{
+    margin-left: 10px;
+    font-weight: 800;
+}
+@media (max-width: 450px) {
+    body{
+        padding: 20px;
+    }
+    .container{
+        max-width: 350px;
+        padding: 15px;
+        border: 1px solid #000; /* Set border width and color */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 10px 5px 0px 0px; /* Set shadow */
+    }
+    .container .content{
+        margin-top: 20px;
+    }
+    .content .date{
+        margin: 20px 0;
+        color: hsl(0, 0%, 50%);
+        font-size: 0.9rem;
+    }
+    .content .heading h1{
+        font-size: 1rem;
+    }
+    .content .text{
+        margin: 15px 0;
+    }
+    }
